@@ -12,11 +12,11 @@ config = context.config
 # This line sets up loggers basically.
 fileConfig(config.config_file_name)
 
-# add your model's MetaData object here
+# add your db's MetaData object here
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-from app.model import Base 
+from app.model import Base
 target_metadata = Base.metadata
 
 # other values from the config, defined by the needs of env.py,
